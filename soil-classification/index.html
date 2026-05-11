@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -100,7 +105,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -111,15 +116,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -136,7 +141,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Typical technical challenges in Corona California</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The most common mistake we see in Corona California is treating all silty soils the same. A contractor builds a retaining wall based on a generic soil report from a neighboring lot, only to find the actual material is elastic silt (MH) instead of low-plasticity silt (ML). The difference in consolidation behavior and shear strength can be dramatic. Another frequent error is using the AASHTO classification for a deep foundation application where the USCS system, combined with granulometry, would give a better picture of drainage and frost action. Relying on visual-manual identification alone is not enough when the project involves structural loads or cut slopes. A laboratory classification eliminates the guesswork and the liability.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the difference between USCS and AASHTO soil classification?</summary><p>USCS (ASTM D2487) groups soils by grain size and plasticity, and is used for general geotechnical engineering — foundations, slopes, retaining walls. AASHTO (M 145) groups soils by their performance as highway subgrades, using the group index to quantify frost susceptibility and support value. Both systems often produce different group symbols for the same material, which is why we recommend running both when the project involves both structural and pavement elements.</p></details><details><summary>How much does a soil classification test cost in Corona California?</summary><p>A standard USCS or AASHTO classification runs between $60 and $100 per sample in Corona California. This includes gradation, <a href="../atterberg-limits/" data-interlink="1">Atterberg limits</a>, and the final classification report. The price can go up if organic content or specialized hydrometer <a href="../foundations-fill/" data-interlink="1">analysis</a> is required. Volume discounts apply for multiple samples from the same site.</p></details><details><summary>How long does it take to get the classification results?</summary><p>Typical turnaround is 3 to 5 business days from sample receipt. The sieve and hydrometer <a href="../foundations-fill/" data-interlink="1">analysis</a> takes about 48 hours of drying and settling time, and the <a href="../atterberg-limits/" data-interlink="1">Atterberg limits</a> require another day. If you need expedited service, we can deliver preliminary results in 2 days for an additional fee.</p></details><details><summary>Do I need both USCS and AASHTO classification for my project?</summary><p>Only if your project involves both a structure (foundation) and a pavement or parking lot. For a single-family home with a driveway, USCS is sufficient. For a commercial development with a parking lot and access roads, we recommend both because Caltrans and city engineers in Corona California often require the AASHTO group index for pavement design. The extra cost is small compared to the risk of using the wrong subgrade modulus.</p></details><details><summary>What soil types are most common in Corona California?</summary><p>Corona California sits on Quaternary alluvium from the Santa Ana River and its tributaries. The most common soils are silty sands (SM), clayey sands (SC), and low-plasticity clays (CL). In the foothills near the Cleveland National Forest, residual soils from weathered granite produce sandy silts (ML) and occasional poorly graded sands (SP). We see a wide range of group indices from 0 to 12 in the AASHTO system.</p></details>
             </section>
 

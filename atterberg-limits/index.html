@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -100,7 +105,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -111,15 +116,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -136,7 +141,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Typical technical challenges in Corona California</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The semi-arid climate of Corona produces seasonal moisture cycles that directly affect Atterberg limits. During dry summers, near-surface clays desiccate and crack. When winter rains arrive, these clays swell. This cyclic volume change is the primary risk for lightly loaded structures. We have documented PI increases of up to 8 points in samples taken after wet seasons compared to dry-season samples. Ignoring this seasonal variability leads to undersized foundations. Our testing accounts for the natural moisture content at the time of sampling, and we always advise the design team to consider the wettest probable condition.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What are Atterberg limits and why do they matter for construction in Corona?</summary><p>Atterberg limits define the moisture content thresholds where fine-grained soils change from solid to semi-solid (shrinkage limit), semi-solid to plastic (plastic limit), and plastic to liquid (liquid limit). In Corona, these limits help classify clays and silts that dominate the local alluvial soils, directly influencing foundation design and pavement thickness.</p></details><details><summary>How much does Atterberg limits testing typically cost in Corona, California?</summary><p>The typical range for Atterberg limits testing in Corona is between US$60 and US$100 per sample. This includes liquid limit, plastic limit, and plasticity index. Volume discounts apply for multiple samples from the same project site. The final quote depends on sample quantity and required turnaround time.</p></details><details><summary>What is the difference between liquid limit and plastic limit?</summary><p>The liquid limit (LL) is the moisture content at which soil begins to flow under its own weight, measured with the Casagrande cup. The plastic limit (PL) is the moisture content where a 3.2 mm thread of soil just begins to crumble when rolled. The difference between them is the plasticity index (PI), which indicates the soil's plasticity and swell potential.</p></details><details><summary>How do Atterberg limits relate to expansive soils in Corona?</summary><p>Soils with a plasticity index above 25 are considered highly expansive. In Corona, many clays from the alluvial terraces and old channel deposits fall into this category. The Atterberg limits allow us to estimate the swell index and recommend mitigation measures such as over-excavation or chemical stabilization.</p></details><details><summary>Can Atterberg limits be used to classify soils for seismic design?</summary><p>Yes, but indirectly. The USCS classification derived from Atterberg limits and grain size data helps assign a site class per ASCE 7. For example, a high-PI clay typically falls into Site Class E (soft clay), which triggers amplified seismic response spectra. This is critical for Corona projects in Seismic Design Category D.</p></details>
             </section>
 

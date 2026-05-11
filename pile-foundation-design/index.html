@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -100,7 +105,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -111,15 +116,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -136,7 +141,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -193,6 +202,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Typical technical challenges in Corona California</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Corona grew rapidly after the 1950s, transforming from a citrus-growing community into a suburban hub. That development pushed construction onto marginal land including old river channels, alluvial fans, and filled agricultural plots. The risk with these soils is twofold: first, loose fill layers can settle unevenly under pile loads, and second, the water table fluctuates seasonally, potentially reducing effective stress around the pile shaft. We have encountered several sites where undocumented fill exceeded 15 feet depth. In those cases, pile foundation design must either extend piles through the fill into competent native soil or include a ground improvement program like dynamic compaction before driving. Ignoring the fill layer risks differential settlement that cracks slabs and tilts structures. We always recommend at least one borings per proposed building corner to map these variable conditions.</p>
             </section>
 
@@ -217,6 +228,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost range for pile foundation design in Corona?</summary><p>For a standard commercial or residential project in Corona, the design fee typically ranges between US$1,760 and US$6,980 depending on the number of borings, load tests required, and complexity of the soil profile. We provide a fixed-price proposal after reviewing the site conditions.</p></details><details><summary>How deep do piles need to go in Corona's alluvial soils?</summary><p>Based on our local experience, piles in Corona commonly reach depths of 30 to 55 feet to bear on dense older alluvium. The exact depth depends on the thickness of loose sands and clays encountered. We determine the required depth through SPT borings and CPT soundings at each column location.</p></details><details><summary>Do I need a pile load test for my Corona project?</summary><p>The 2021 IBC requires at least one static load test per building unless you use a higher factor of safety on the design capacity. For projects with more than 50 piles, we usually recommend two tests to confirm both end-bearing and skin friction assumptions. The tests follow ASTM D3966 procedures and take about 3 to 5 days to complete.</p></details>
             </section>
 

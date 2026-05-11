@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -100,7 +105,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -111,15 +116,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -136,7 +141,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -210,6 +219,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>We break down foundations on fill analysis into four focused services. Each one targets a specific part of the problem.</p>
                 <style>.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#059669;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover{border-color:#059669;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#059669}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}</style><div class="servicios-grid"><div class="servicio"><h3>Bearing Capacity Evaluation for Fills</h3><p>We calculate allowable bearing pressure using N-values from SPT and <a href="../plate-load/" data-interlink="1">plate load tests</a>. The analysis accounts for fill heterogeneity and potential saturation.</p></div><div class="servicio"><h3>Settlement Monitoring Plan</h3><p>We design a settlement monitoring program using surface and subsurface benchmarks. Data is collected quarterly for the first two years after construction.</p></div><div class="servicio"><h3>Collapse Potential Testing</h3><p>Single-oedometer collapse tests on undisturbed fill samples. We identify zones where wetting could trigger sudden settlement under foundation loads.</p></div><div class="servicio"><h3>Fill Compaction Verification</h3><p>Field density tests (sand cone or nuclear gauge) combined with laboratory Proctor curves. We compare current density to original compaction specifications.</p></div></div>
             </section>

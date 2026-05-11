@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -100,7 +105,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -111,15 +116,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -136,7 +141,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Typical technical challenges in Corona California</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>In Corona, many times we see that pile driving in the Santa Ana River floodplain causes heave in adjacent mat foundations if spacing is too tight. The clay layers there are plastic enough to squeeze upward between piles. We mitigate this by sequencing drives from the center outward and by pre‑augering through the upper 10 ft of expansive material. Another local hazard is the Old Alluvium unit — it looks uniform in boring logs but contains cemented lenses that break driving shoes. For every driven pile design in Corona California we require a test pile program before production begins. That way we can adjust the hammer energy and cushion thickness before the contractor mobilizes full crews.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost range for a driven pile design study in Corona California?</summary><p>A complete study — including borings, lab testing, and <a href="../foundations-fill/" data-interlink="1">analysis</a> — runs between US$1,180 and US$4,640 depending on the number of test piles and depth of exploration. Large projects with multiple pile types may exceed the upper end. We provide a firm quote after reviewing the site conditions.</p></details><details><summary>How does the seismic site class in Corona affect driven pile design?</summary><p>Corona sits in Site Class D (stiff soil) over much of the valley, but some areas near Temescal Canyon qualify as Site Class C. Per ASCE 7, that changes the spectral accelerations and the required pile embedment. We evaluate liquefaction potential using the NCEER method and adjust the pile group to resist lateral spreading if needed.</p></details><details><summary>What pile type works best for the alluvial soils in Corona California?</summary><p>HP 12x53 sections are the most common because they punch through the cemented lenses and develop good end bearing in the dense sands. Precast prestressed concrete piles work well where corrosion is a concern — for example near the Santa Ana River. We always run a corrosion study if the groundwater pH is below 5.5.</p></details><details><summary>How do you handle negative skin friction in driven pile design?</summary><p>In Corona, fill soils placed over soft alluvium can settle several inches after pile installation. That downdrag force adds to the structural load. We calculate the neutral plane depth using the method from FHWA NHI‑16‑072 and add a coating on the upper pile segment or increase the pile section to carry the extra drag load.</p></details>
             </section>
 

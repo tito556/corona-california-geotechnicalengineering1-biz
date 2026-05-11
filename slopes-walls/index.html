@@ -23,6 +23,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -97,7 +102,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -108,15 +113,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -133,7 +138,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -145,7 +152,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://corona-california.geotechnicalengineering1.biz/slopes-walls/","inLanguage":"en","name":"Slopes & Walls in Corona California – USA","@id":"https://corona-california.geotechnicalengineering1.biz/slopes-walls/","isPartOf":{"url":"https://corona-california.geotechnicalengineering1.biz","@id":"https://corona-california.geotechnicalengineering1.biz/#website-d35e","@type":"WebSite"},"@type":"WebPage","description":"In Corona, California, slopes and walls must contend with weathered granitic terrain, expansive soils, and seismic demands governed by CBC Chapter 18 and l"},{"itemListElement":[{"name":"Home","position":1,"item":"https://corona-california.geotechnicalengineering1.biz/","@type":"ListItem"},{"name":"Slopes & Walls","position":2,"item":"https://corona-california.geotechnicalengineering1.biz/slopes-walls/","@type":"ListItem"}],"@type":"BreadcrumbList"},{"name":"Slopes & Walls","itemListElement":[{"name":"Active/passive anchor design","position":1,"url":"https://corona-california.geotechnicalengineering1.biz/active-passive-anchor-design/","@type":"ListItem"},{"name":"Debris flow analysis","position":2,"url":"https://corona-california.geotechnicalengineering1.biz/debris-flow-analysis/","@type":"ListItem"},{"name":"Landslide assessment","position":3,"url":"https://corona-california.geotechnicalengineering1.biz/landslide-assessment/","@type":"ListItem"},{"name":"Retaining wall design","position":4,"url":"https://corona-california.geotechnicalengineering1.biz/retaining-wall-design/","@type":"ListItem"},{"name":"Slope stability analysis","position":5,"url":"https://corona-california.geotechnicalengineering1.biz/slope-stability-analysis/","@type":"ListItem"},{"name":"Slope stabilization design","position":6,"url":"https://corona-california.geotechnicalengineering1.biz/slope-stabilization-design/","@type":"ListItem"}],"@type":"ItemList"}]}</script></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://corona-california.geotechnicalengineering1.biz/slopes-walls/","inLanguage":"en","name":"Slopes & Walls in Corona California – USA","@id":"https://corona-california.geotechnicalengineering1.biz/slopes-walls/","isPartOf":{"url":"https://corona-california.geotechnicalengineering1.biz","@id":"https://corona-california.geotechnicalengineering1.biz/#website-d35e","@type":"WebSite"},"@type":"WebPage","description":"In Corona, California, slopes and walls must contend with weathered granitic terrain, expansive soils, and seismic demands governed by CBC Chapter 18 and l"},{"itemListElement":[{"name":"Home","position":1,"item":"https://corona-california.geotechnicalengineering1.biz/","@type":"ListItem"},{"name":"Slopes & Walls","position":2,"item":"https://corona-california.geotechnicalengineering1.biz/slopes-walls/","@type":"ListItem"}],"@type":"BreadcrumbList"},{"name":"Slopes & Walls","itemListElement":[{"name":"Active/passive anchor design","position":1,"url":"https://corona-california.geotechnicalengineering1.biz/active-passive-anchor-design/","@type":"ListItem"},{"name":"Debris flow analysis","position":2,"url":"https://corona-california.geotechnicalengineering1.biz/debris-flow-analysis/","@type":"ListItem"},{"name":"Landslide assessment","position":3,"url":"https://corona-california.geotechnicalengineering1.biz/landslide-assessment/","@type":"ListItem"},{"name":"Retaining wall design","position":4,"url":"https://corona-california.geotechnicalengineering1.biz/retaining-wall-design/","@type":"ListItem"},{"name":"Slope stability analysis","position":5,"url":"https://corona-california.geotechnicalengineering1.biz/slope-stability-analysis/","@type":"ListItem"},{"name":"Slope stabilization design","position":6,"url":"https://corona-california.geotechnicalengineering1.biz/slope-stabilization-design/","@type":"ListItem"}],"@type":"ItemList"}]}</script></head>
 <body>
 
 <header>
@@ -209,6 +218,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>We provide a full suite of anchor-related geotechnical services tailored to Corona's terrain. Each service is delivered under ISO 17025-accredited procedures with equipment calibrated to NIST standards.</p>
                 <style>.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#059669;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover{border-color:#059669;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#059669}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}</style><div class="servicios-grid"><div class="servicio"><h3>Active Anchor Design (Post-Tensioned)</h3><p>Design of prestressed ground anchors for permanent and temporary tieback walls. Includes bond zone sizing, corrosion protection per PTI Class I/II, and proof-test load schedules. We model the load transfer using the FHWA load-test verification method.</p></div><div class="servicio"><h3>Passive Anchor Design (Deadman / Grouted)</h3><p>Design of non-prestressed anchors and deadman systems where the anchor rod or grouted tendon is embedded in a passive soil mass. We evaluate the passive earth pressure coefficient using log-spiral or Rankine methods depending on wall geometry.</p></div><div class="servicio"><h3>Pullout and Proof Testing</h3><p>In-situ verification of anchor capacity using hydraulic jacks and calibrated load cells. We perform incremental load-hold tests to measure creep displacement and confirm that the anchor meets the specified factor of safety before the contractor locks off the tendon.</p></div><div class="servicio"><h3>Anchor Bond Zone Characterization</h3><p>Laboratory testing of soil and rock samples from the anchor bond zone, including direct shear on rock joints, unconfined compression on rock cores, and interface shear tests between grout and soil. Results are used to refine the bond stress values assumed in design.</p></div></div>
             </section>
@@ -220,6 +231,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Coverage in Corona California</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <link rel="stylesheet" href="/css/leaflet-d35e.css"/>
                 <div id="mapa-ciudad"></div>
                 <script src="/js/leaflet-d35e.js"></script>

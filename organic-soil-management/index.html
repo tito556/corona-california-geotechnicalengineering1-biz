@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
 
@@ -100,7 +105,7 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
     border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
     max-height: calc(100vh - 2rem); overflow-y: auto;
 }
-    .container { padding: 1rem; }
+    
 .cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -111,15 +116,15 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 .header-contact a:hover { color: white; }
 .servicio:hover { border-color: var(--primary); }
 .cat-row:hover{background:rgba(255,255,255,.05)}
-    .content-area { flex-direction: column; }
+    
 summary:hover { background: rgba(0,0,0,0.02); }
 details[open] summary::before { content: '− '; }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
+    
+    
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 a { color: var(--primary); text-decoration: none; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -136,7 +141,9 @@ tr:nth-child(even) { background: #f8fafc; }
     transition: background .15s;
     border-top: 1px solid rgba(255,255,255,0.04);
 }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}</style>
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ tr:nth-child(even) { background: #f8fafc; }
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
   .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style></head>
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Typical technical challenges in Corona California</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>In Corona California, we frequently see developers buy lots near the Santa Ana River floodplain thinking the ground is stable because the surface looks dry. The risk is that organic soils undergo secondary compression — creep — at a much higher rate than mineral soils. Even after preloading, a 2-meter thick peat layer can settle an additional 10 to 20 centimeters over a decade as the organic fibers break down biologically. We had a case in the Dos Lagos area where a parking lot settled 15 cm in three years because the organic soil was only treated with a thin gravel cap. The only reliable way to mitigate this is to either excavate and replace the organic layer with engineered fill, or use <a href="../preloading-design/">preloading with wick drains</a> to accelerate consolidation before construction. Ignoring the biological component of settlement is the single biggest financial risk for any project on organic ground.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost range for organic soil testing in Corona California?</summary><p>For a standard residential or commercial project in Corona, the cost of organic soil testing — including field sampling, loss-on-ignition, <a href="../atterberg-limits/" data-interlink="1">Atterberg limits</a>, and consolidation testing — typically falls between US$780 and US$2,600. The final price depends on the number of samples required, the depth of the organic layers, and whether additional tests like fiber content or triaxial shear are needed.</p></details><details><summary>How deep do organic soils typically occur in Corona California?</summary><p>In our experience across Corona, organic layers are most common within the first 3 to 6 meters below grade, especially near the Santa Ana River corridor and the old Prado Basin wetlands. The thickness of a single organic stratum can range from 0.3 meters to over 2 meters. We've encountered peat lenses as deep as 4.5 meters in the Green River area, always interbedded with silty sands and clays.</p></details><details><summary>What is the difference between organic soil and peat for foundation design?</summary><p>From a geotechnical standpoint, the distinction is based on organic content by dry mass. Soil with 20% to 75% organic matter is classified as peat; below 20% it is considered organic soil (OH or OL). Peat has much higher compressibility and lower shear strength — typical undrained strengths for Corona peat range from 10 to 30 kPa, while organic clays can reach 40 to 60 kPa. Both require special foundation treatment, but peat almost always requires removal or deep foundation support.</p></details><details><summary>Can I build directly on organic soil without removing it?</summary><p>In most cases, no. Building directly on untreated organic soil in Corona California leads to excessive total and differential settlement. The organic matter decomposes over time, causing volume loss that no amount of compaction can reverse. Exceptions exist for very shallow organic layers (less than 0.5 meters) that can be bridged with a reinforced slab, or for lightly loaded structures like sheds. For any habitable building, we recommend either excavation and replacement down to mineral soil, or a deep foundation system like piles or micropiles that transfer loads below the organic zone.</p></details>
             </section>
 
