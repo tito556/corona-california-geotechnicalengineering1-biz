@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -246,7 +282,7 @@ header.hero, .hero { position: relative !important; }
                 <h2>Common questions</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 
-                <details><summary>How much does a slope stability analysis cost in Corona?</summary><p>Our typical fee for a residential slope stability <a href="../foundations-fill/" data-interlink="1">analysis</a> in Corona ranges between US$1,210 and US$3,610, depending on the number of cross-sections, depth of borings, and whether seismic deformation analysis is required.</p></details><details><summary>What minimum factor of safety does the City of Corona require?</summary><p>The City of Corona generally requires a static factor of safety of at least 1.5 and a seismic pseudo-static factor of safety of at least 1.1, following IBC 2021 and ASCE 7-16 guidelines.</p></details><details><summary>How deep do the borings need to be for a slope stability study?</summary><p>Borings must extend at least 10 feet below the deepest potential failure surface, or into competent bedrock if a deep-seated failure mode is suspected. In Corona's colluvial slopes, this often means 30 to 60 feet.</p></details><details><summary>Can slope stability analysis be done without drilling?</summary><p>No. A reliable stability <a href="../foundations-fill/" data-interlink="1">analysis</a> requires undisturbed soil samples and shear strength testing from borings or test pits. Surface observations alone cannot capture the subsurface stratigraphy and groundwater conditions that control stability.</p></details><details><summary>What site classes are most common in Corona?</summary><p>Most of Corona falls under Site Class C (very dense soil or soft rock) or D (stiff soil), per the NEHRP classification. Site Class D is particularly common in the alluvial valley areas near the Santa Ana River.</p></details>
+                <details><summary>How much does a slope stability analysis cost in Corona?</summary><p>Our typical fee for a residential slope stability <a href="../foundations-fill/" data-interlink="1">analysis</a> in Corona ranges between US$1,210 and US$3,610, depending on the number of cross-sections, depth of borings, and whether seismic deformation analysis is required.</p></details><details><summary>What minimum factor of safety does the City of Corona require?</summary><p>The City of Corona generally requires a static factor of safety of at least 1.5 and a <a href="/seismic/">seismic</a> pseudo-static factor of safety of at least 1.1, following IBC 2021 and ASCE 7-16 guidelines.</p></details><details><summary>How deep do the borings need to be for a slope stability study?</summary><p>Borings must extend at least 10 feet below the deepest potential failure surface, or into competent bedrock if a deep-seated failure mode is suspected. In Corona's colluvial slopes, this often means 30 to 60 feet.</p></details><details><summary>Can slope stability analysis be done without drilling?</summary><p>No. A reliable stability <a href="../foundations-fill/" data-interlink="1">analysis</a> requires undisturbed soil samples and shear strength testing from borings or test pits. Surface observations alone cannot capture the subsurface stratigraphy and groundwater conditions that control stability.</p></details><details><summary>What site classes are most common in Corona?</summary><p>Most of Corona falls under Site Class C (very dense soil or soft rock) or D (stiff soil), per the NEHRP classification. Site Class D is particularly common in the alluvial valley areas near the Santa Ana River.</p></details>
             </section>
 
             <section>

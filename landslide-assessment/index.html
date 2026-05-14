@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -244,7 +280,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Common questions</h2>
-                <details><summary>How long does a landslide assessment take in Corona?</summary><p>Most residential lots can be evaluated in 5 to 10 business days. That includes field work, lab testing, and the final report. Larger hillside tracts or sites requiring instrumentation may take 3 to 4 weeks.</p></details><details><summary>What is the typical cost range for a landslide assessment?</summary><p>For a standard single-family lot in Corona, expect between US$1.070 and US$3.820 depending on the number of test pits, lab tests required, and whether instrumentation is needed. We provide a fixed quote after a brief site visit.</p></details><details><summary>Do you assess slopes that already show cracks or movement?</summary><p>Yes. In fact, that’s when a landslide assessment is most critical. We measure crack width, depth, and orientation, then correlate those with subsurface conditions to determine if movement is active or old.</p></details><details><summary>What standards do you follow for slope stability analysis?</summary><p>We follow the IBC and ASCE 7 for seismic loads, and use limit-equilibrium methods (Bishop simplified, Spencer) as recommended by FHWA-NHI-05. Soil parameters come from direct shear tests per ASTM D3080.</p></details><details><summary>Can I build a retaining wall without a landslide assessment?</summary><p>You can, but it’s risky. Without knowing the shear strength of the soil and the location of the failure surface, a retaining wall may be under-designed. We recommend at least a basic evaluation before wall construction.</p></details>
+                <details><summary>How long does a landslide assessment take in Corona?</summary><p>Most residential lots can be evaluated in 5 to 10 business days. That includes field work, lab testing, and the final report. Larger hillside tracts or sites requiring instrumentation may take 3 to 4 weeks.</p></details><details><summary>What is the typical cost range for a landslide assessment?</summary><p>For a standard single-family lot in Corona, expect between US$1.070 and US$3.820 depending on the number of test pits, lab tests required, and whether instrumentation is needed. We provide a fixed quote after a brief site visit.</p></details><details><summary>Do you assess slopes that already show cracks or movement?</summary><p>Yes. In fact, that’s when a landslide assessment is most critical. We measure crack width, depth, and orientation, then correlate those with subsurface conditions to determine if movement is active or old.</p></details><details><summary>What standards do you follow for slope stability analysis?</summary><p>We follow the IBC and ASCE 7 for <a href="/seismic/">seismic</a> loads, and use limit-equilibrium methods (Bishop simplified, Spencer) as recommended by FHWA-NHI-05. Soil parameters come from direct shear tests per ASTM D3080.</p></details><details><summary>Can I build a retaining wall without a landslide assessment?</summary><p>You can, but it’s risky. Without knowing the shear strength of the soil and the location of the failure surface, a retaining wall may be under-designed. We recommend at least a basic evaluation before wall construction.</p></details>
             </section>
 
             <section>

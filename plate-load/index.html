@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -244,7 +280,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Common questions</h2>
-                <details><summary>What is the difference between a plate load test and a CBR test?</summary><p>The CBR test measures the California Bearing Ratio of a compacted soil sample in a lab mold, while the PLT measures the in-situ bearing capacity and modulus of subgrade reaction of the actual ground under field conditions. The PLT gives a direct design parameter for foundations and slabs.</p></details><details><summary>How long does a plate load test take in Corona?</summary><p>A standard PLT with a 12-inch plate takes about 4 to 6 hours on site, including setup, loading, and demobilization. Tests with larger plates or multiple load cycles can extend to a full day. The lab <a href="../foundations-fill/" data-interlink="1">analysis</a> and report are delivered within 3 business days.</p></details><details><summary>What does a plate load test cost in Corona, California?</summary><p>The typical cost for a plate load test in Corona ranges between $940 and $1,160 for a standard 12-inch plate test. Larger plates, multiple test locations, or cyclic loading can increase the price. Contact us for a quote based on your specific project scope.</p></details><details><summary>Do I need a plate load test for a retaining wall in Corona?</summary><p>Not always, but if the wall exceeds 4 feet in height or is located in the expansive clay areas near the Santa Ana River, the PLT confirms the bearing capacity and helps avoid differential settlement under the wall footing. The IBC 2021 requires site-specific bearing values for walls supporting surcharge loads.</p></details><details><summary>Can the PLT be performed on a slope or uneven ground in Corona?</summary><p>Yes, but we need to prepare a level testing pad at least 3 feet by 3 feet. On slopes steeper than 3:1 we use a temporary cribbing platform or a reaction beam anchored to helical piles. The test results are still valid for the prepared surface, though the bearing capacity on the slope itself may differ.</p></details>
+                <details><summary>What is the difference between a plate load test and a CBR test?</summary><p>The CBR test measures the California Bearing Ratio of a compacted soil sample in a lab mold, while the PLT measures the in-situ bearing capacity and modulus of subgrade reaction of the actual ground under field conditions. The PLT gives a direct design parameter for <a href="/foundations/">foundations</a> and slabs.</p></details><details><summary>How long does a plate load test take in Corona?</summary><p>A standard PLT with a 12-inch plate takes about 4 to 6 hours on site, including setup, loading, and demobilization. Tests with larger plates or multiple load cycles can extend to a full day. The lab <a href="../foundations-fill/" data-interlink="1">analysis</a> and report are delivered within 3 business days.</p></details><details><summary>What does a plate load test cost in Corona, California?</summary><p>The typical cost for a plate load test in Corona ranges between $940 and $1,160 for a standard 12-inch plate test. Larger plates, multiple test locations, or cyclic loading can increase the price. Contact us for a quote based on your specific project scope.</p></details><details><summary>Do I need a plate load test for a retaining wall in Corona?</summary><p>Not always, but if the wall exceeds 4 feet in height or is located in the expansive clay areas near the Santa Ana River, the PLT confirms the bearing capacity and helps avoid differential settlement under the wall footing. The IBC 2021 requires site-specific bearing values for walls supporting surcharge loads.</p></details><details><summary>Can the PLT be performed on a slope or uneven ground in Corona?</summary><p>Yes, but we need to prepare a level testing pad at least 3 feet by 3 feet. On slopes steeper than 3:1 we use a temporary cribbing platform or a reaction beam anchored to helical piles. The test results are still valid for the prepared surface, though the bearing capacity on the slope itself may differ.</p></details>
             </section>
 
             <section>
