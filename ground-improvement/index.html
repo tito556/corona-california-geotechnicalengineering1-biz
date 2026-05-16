@@ -195,7 +195,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -206,6 +206,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head>
 <body>
@@ -234,11 +290,11 @@ body>*{max-width:100vw}
         <main>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
 
+
+<img src="/img/vibrocompactacion-4.webp" alt="Improvement in Corona California" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Improvement in Corona, California, addresses the engineering challenges posed by the region's complex geology, which includes alluvial deposits, weathered granitic bedrock, and expansive clay soils. A thorough site characterization is the critical first step, typically beginning with a comprehensive geotechnical <a href="/investigation/">investigation</a> to define subsurface conditions. Local regulations, primarily enforced through the City of Corona Building Department and adhering to the California Building Code (CBC), mandate rigorous analysis of soil bearing capacity and settlement potential, especially in areas with a high shrink-swell potential. Identifying the specific physical properties of these fine-grained soils through <a href="/atterberg-limits/">Atterberg limits</a> testing in a specialized <a href="/laboratory/">laboratory</a> is essential for predicting volume change behavior and selecting an effective improvement strategy.</p>
 <p>The methodology for designing Improvement relies on a suite of standardized In-Situ procedures to quantify the initial soil parameters and verify post-treatment performance. The <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> is routinely deployed to evaluate relative density in granular layers and consistency in cohesive strata, providing essential data for empirical design methods per ASTM D1586. For projects requiring highly detailed stratigraphy and a direct assessment of liquefaction potential, the <a href="/cone-penetration/">Cone Penetration Test (CPT)</a> offers continuous, high-resolution data in accordance with ASTM D5778. The performance of shallow Improvement methods, such as aggregate piers or rammed aggregate columns, is frequently validated through full-scale <a href="/plate-load/">plate load testing (PLT)</a>, a critical acceptance tool to confirm that the improved ground meets the specified modulus and bearing capacity criteria.</p>
 <p>Typical Improvement projects in Corona range from residential subdivisions on compressible alluvium to large-scale commercial and industrial developments. Deep dynamic compaction or vibro-replacement are often specified for warehouse slabs and tilt-up buildings where total and differential settlement must be strictly controlled. For infrastructure and pavement subgrades, chemical stabilization of expansive soils with lime or cement is a common solution to mitigate heave. Direct examination of near-surface conditions via an <a href="/exploratory-pit/">exploratory test pit</a> allows engineers to log soil profiles, observe groundwater conditions, and collect high-quality bulk samples for mix design, forming a vital link between the <a href="/in-situ-testing/">In-Situ</a> program and laboratory analysis.</p>
-<img src="/img/vibrocompactacion-4.webp" alt="Improvement in Corona California" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>The Improvement process is a systematic sequence from initial site characterization to design, execution, and rigorous quality assurance. The final deliverable is a detailed geotechnical report containing the design basis, construction specifications, and a field verification plan. This documentation ensures the contractor understands the performance criteria and provides the owner with a verifiable record of compliance. By integrating advanced testing methods with practical construction techniques, our value proposition is the delivery of an optimized foundation solution that significantly reduces earthwork over-excavation and replacement costs, transforming marginal ground into a competent, high-performance bearing stratum for your project.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../dynamic-compaction-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Dynamic compaction design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../geomembrane-specification/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geomembrane specification</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../geotechnical-instrumentation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical instrumentation (design and installation)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../geotextile-specification/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotextile specification</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../grouting-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Grouting design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../organic-soil-management/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Organic soil management</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../preloading-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Preloading design (without surcharge)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../preloading-surcharge-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Preloading with surcharge design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../vibrocompaction-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Vibrocompaction design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 
@@ -257,7 +313,7 @@ body>*{max-width:100vw}
 <script src="/js/leaflet-d35e.js"></script>
 <script>
 
-(function(){function init(){if(typeof L==="undefined"){setTimeout(init,200);return;}var el=document.getElementById("map-leaflet");if(!el)return;var map=L.map(el).setView([33.8752945,-117.566444],12);L.tileLayer("https://{s}.tile-d35e.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap",maxZoom:18}).addTo(map);L.marker([33.8752945,-117.566444],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Corona California").openPopup();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}})();
+(function(){function init(){if(typeof L==="undefined"){setTimeout(init,200);return;}var el=document.getElementById("map-leaflet");if(!el)return;var map=L.map(el).setView([33.8752945,-117.566444],12);L.tileLayer("https://{s}.tile-d35e.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap",maxZoom:18}).addTo(map);L.marker([33.8752945,-117.566444],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Corona California").openPopup();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}})();
 </script><footer style="background:#0F172A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 2rem"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem"><div><h4 style="color:#FFF;font-size:1rem;margin:0 0 .8rem">CORONA CALIFORNIA US</h4><p style="margin:0;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Corona California, USA</p></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">SERVICES</h4><a href="../soil-mechanics-study/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Services</a><a href="../standard-penetration/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">SPT</a><a href="../exploratory-pit/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Test pits</a></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">CONNECT</h4><p style="margin:0;font-size:.9rem;line-height:1.8"><a href="mailto:contact@geotechnicalengineering1.biz" style="color:#FFF;text-decoration:none">contact@geotechnicalengineering1.biz</a></p></div></div><div style="max-width:1100px;margin:2rem auto 0;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:.8rem;color:rgba(255,255,255,.5)">© 2026 Geotechnicalengineering1 Us. All rights reserved.</div><div data-updated="2026-04-18" style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:.8rem">Last updated: 2026-03-10</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.csagroup.org/" rel="nofollow noopener" target="_blank">CSA Group Standards</a> · <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div></footer>
 
 <script>(function(){document.querySelectorAll(".cat-toggle").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();var s=b.parentElement.parentElement.querySelector(".cat-sub-wrap");var ex=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",!ex);if(s){s.hidden=ex;}});});})();</script></body>

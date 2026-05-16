@@ -195,7 +195,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -206,6 +206,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head>
 <body>
@@ -233,11 +289,11 @@ body>*{max-width:100vw}
         </aside>
         <main>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/pilotes-hincados-4.webp" alt="Foundations in Corona California" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/pilotes-hincados-5.webp" alt="Foundations in Corona California" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Foundation engineering in Corona, California, demands a rigorous understanding of the region's complex geology, which transitions from the alluvial plains of the Santa Ana River to the steep, rocky terrain of the Santa Ana Mountains. Our geotechnical scope covers the full lifecycle of subsurface characterization, ensuring structures are designed for the specific challenges of Riverside County. This includes managing risks from expansive clay soils and loose alluvial deposits common in areas like Eagle Glen, and navigating the hillside ordinances that govern construction in zones like Sierra del Oro. This initial phase relies on precise <a href="/investigation/">geotechnical investigation</a> to define the subsurface profile, with field data often supplemented by targeted <a href="/laboratory/">laboratory testing</a> to calibrate soil behavior models per local and state codes, including the California Building Code (CBC).</p>
 <p>Our subsurface exploration methodology strictly adheres to ASTM International standards, which are the benchmark for defensible foundation design in the United States. We deploy a suite of in-situ tests, beginning with the <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> to obtain disturbed samples and a relative density index, a procedure governed by ASTM D1586. For fine-grained soils and precise stratigraphic profiling, the <a href="/cone-penetration/">Cone Penetration Test (CPT)</a> per ASTM D5778 provides near-continuous data on tip resistance and sleeve friction, which is critical for calculating bearing capacity in the soft alluvium found near the Santa Ana River. Where shallow foundations are considered, direct measurement of soil response is achieved with a <a href="/plate-load/">Plate Load Test (PLT)</a> following ASTM D1194, providing site-specific modulus of subgrade reaction values that no empirical correlation can match.</p>
 <p>The diverse topography of Corona dictates distinctly different foundation solutions for typical projects ranging from commercial tilt-up buildings in the McKinley Street corridor to custom homes in the foothills. For hillside residential developments, where expansive soils and rock are prevalent, we often specify drilled piers socketed into competent bedrock, with prior characterization via <a href="/in-situ-testing/">In-Situ</a> programs. For warehouse and industrial projects, Improvement such as aggregate piers may be recommended, with quality control verified by post-treatment CPT soundings. In areas with undocumented fill, a direct <a href="/exploratory-pit/">exploratory test pit</a> provides an unmatched visual confirmation of soil stratigraphy and debris content, informing a decision between deep foundations or a costly over-excavation and recompaction effort.</p>
-<img src="/img/micropilotes-5.webp" alt="Foundations in Corona California" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/cimentaciones-superficiales-1.webp" alt="Foundations in Corona California" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>Our foundation design process in Corona translates raw data into actionable, value-engineered recommendations. Each engagement delivers a comprehensive geotechnical report containing a complete site description, boring logs, lab results including <a href="/atterberg-limits/">Atterberg limits</a> for expansive soil classification, and clear design parameters for bearing capacity, lateral earth pressures, and seismic considerations per CBC Chapter 18. The core value proposition lies in eliminating the uncertainty that leads to costly over-design or, worse, post-construction distress. By integrating local geological expertise with a full array of standardized testing methods, we provide engineers and owners a single, accountable source for a foundation that is both code-compliant and optimized for Corona’s unique subsurface conditions.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../bearing-capacity-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Bearing capacity analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../driven-pile-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Driven pile design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../expansive-soil-evaluation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Expansive soil evaluation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../foundations-fill/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Foundations on fill (analysis)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../micropile-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Micropile design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../pile-foundation-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Pile foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../raft-mat-foundation-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Raft/mat foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../shallow-foundation-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Shallow foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
@@ -257,7 +313,7 @@ body>*{max-width:100vw}
 <script src="/js/leaflet-d35e.js"></script>
 <script>
 
-(function(){function init(){if(typeof L==="undefined"){setTimeout(init,200);return;}var el=document.getElementById("map-leaflet");if(!el)return;var map=L.map(el).setView([33.8752945,-117.566444],12);L.tileLayer("https://{s}.tile-d35e.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap",maxZoom:18}).addTo(map);L.marker([33.8752945,-117.566444],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Corona California").openPopup();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}})();
+(function(){function init(){if(typeof L==="undefined"){setTimeout(init,200);return;}var el=document.getElementById("map-leaflet");if(!el)return;var map=L.map(el).setView([33.8752945,-117.566444],12);L.tileLayer("https://{s}.tile-d35e.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap",maxZoom:18}).addTo(map);L.marker([33.8752945,-117.566444],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Corona California").openPopup();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}})();
 </script><footer style="background:#0F172A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 2rem"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem"><div><h4 style="color:#FFF;font-size:1rem;margin:0 0 .8rem">CORONA CALIFORNIA US</h4><p style="margin:0;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Corona California, USA</p></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">SERVICES</h4><a href="../soil-mechanics-study/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Services</a><a href="../standard-penetration/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">SPT</a><a href="../exploratory-pit/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Test pits</a></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">CONNECT</h4><p style="margin:0;font-size:.9rem;line-height:1.8"><a href="mailto:contact@geotechnicalengineering1.biz" style="color:#FFF;text-decoration:none">contact@geotechnicalengineering1.biz</a></p></div></div><div style="max-width:1100px;margin:2rem auto 0;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:.8rem;color:rgba(255,255,255,.5)">© 2026 Geotechnicalengineering1 Us. All rights reserved.</div><div data-updated="2026-04-18" style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:.8rem">Last updated: 2026-03-10</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.csagroup.org/" rel="nofollow noopener" target="_blank">CSA Group Standards</a> · <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div></footer>
 
 <script>(function(){document.querySelectorAll(".cat-toggle").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();var s=b.parentElement.parentElement.querySelector(".cat-sub-wrap");var ex=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",!ex);if(s){s.hidden=ex;}});});})();</script></body>
